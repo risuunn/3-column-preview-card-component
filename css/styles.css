@@ -1,0 +1,72 @@
+* {margin: 0; padding: 0; box-sizing: border-box; font-family: "Lexend Deca", serif; font-weight: 400;}
+
+html {font-size: 62.5%;}
+
+a {color: rgb(236, 75, 247);}
+
+#DivOne {width: 100%; height: 100vh; display: flex;
+overflow: scroll;
+align-items: center; justify-content: center;
+background: #eee;}
+
+.GridContainer {width: 120rem; height: 63rem;
+display: flex; flex-direction: row;}
+
+.GridItem {display: flex; flex-direction: column; padding: 2rem 6rem; height: 100%; justify-content: space-around;}
+
+img {width: 8rem; height: 5rem;}
+
+h1 {font-family: "Big Shoulders Display", serif;
+font-weight: 700; color: #fff; font-size: 5rem; text-transform: uppercase;}
+
+p {font-size: 2rem; color: #fff; opacity: 0.7; line-height: 1.5; letter-spacing: 1.5;}
+
+.Orange {background: hsl(31, 77%, 52%); width: 33.33%; height: 100%;
+border-top-left-radius: 2rem; border-bottom-left-radius: 2rem;}
+
+.Blue {background: hsl(184, 100%, 22%); width: 33.33%; height: 100%;}
+
+.Dark {background: hsl(179, 100%, 13%); width: 33.33%; height: 100%;
+border-top-right-radius: 2rem; border-bottom-right-radius: 2rem;}
+
+button {width: 20rem; height: 5.5rem; background: #fff;
+border-radius: 3rem; border: none; font-size: 2rem;
+transition: 300ms ease-in; cursor: pointer;}
+
+button:hover {background: none; border: 0.15rem solid #fff;}
+
+.GridItem:nth-of-type(1) button {color: hsl(31, 77%, 52%);}
+
+.GridItem:nth-of-type(1) button:hover {color: #fff;}
+
+.GridItem:nth-of-type(2) button {color: hsl(184, 100%, 22%);}
+
+.GridItem:nth-of-type(2) button:hover {color: #fff;}
+
+.GridItem:nth-of-type(3) button {color: hsl(179, 100%, 13%);}
+
+.GridItem:nth-of-type(3) button:hover {color: #fff;}
+
+.attribution {position: relative; left: 50%; bottom: 10rem;
+margin-left: -19rem; font-size: 1.7rem; color: rgb(100, 75, 247);}
+
+@media (min-width: 0) and (max-width: 31rem) {
+
+#DivOne {align-items: start; height: 100%;}
+
+.GridContainer {
+flex-direction: column;
+padding: 3rem;
+padding-bottom: 5rem;
+height: 90%; width: 100%; padding-bottom: 5rem;}
+
+.GridItem {display: flex; flex-direction: column; padding: 4rem 6.5rem; border-radius: 0px; height: 100%; width: 100%; justify-content: space-around; row-gap: 40px; overflow: scroll;}
+
+p {font-size: 2rem;}
+
+.Orange {border-top-left-radius: 2rem; border-top-right-radius: 2rem;}
+
+.Dark {border-bottom-right-radius: 2rem; border-bottom-left-radius: 2rem;}
+
+.attribution {position: relative; left: 50%; bottom: 4rem;
+margin-left: -13rem; font-size: 1rem;}}
